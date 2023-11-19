@@ -12,11 +12,8 @@ li {
 }
 
 a:hover {
-  /* color: #fd8600; */
-  border-bottom: 1px solid #fd8600;
   transform: scale(1.01);
   transition: all 0.2s ease-in-out;
-  /* opacity: 0.4; */
 }
 
 a {
