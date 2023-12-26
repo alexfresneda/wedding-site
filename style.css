@@ -98,14 +98,14 @@ a {
 
 .venue-description {
   display: flex;
-  width: 500px;
+  width: 30vw;
   padding: 40px;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   flex-shrink: 0;
   align-self: stretch;
-  background: #76b8cc;
+  background: #ae482f;
 }
 
 .venue-img {
@@ -116,7 +116,7 @@ a {
   object-fit: cover;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   .venue-container {
     flex-direction: column;
     height: auto;
@@ -125,6 +125,7 @@ a {
   .venue-description {
     width: 100%;
     flex-direction: column;
+    gap: 80px;
   }
 
   .venue-img {
@@ -135,6 +136,7 @@ a {
 /* list styling */
 .list {
   display: flex;
+  gap: 80px;
   padding: 80px 40px;
   flex-direction: column;
   justify-content: center;
