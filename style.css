@@ -38,6 +38,40 @@ a {
   cursor: pointer;
 }
 
+.hero {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 30vw;
+  line-height: 30vw;
+  letter-spacing: -4.8px;
+}
+
+.hero-description {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: -0.48px;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero-title {
+    font-size: 50vw;
+    line-height: normal;
+  }
+
+  .hero-description {
+    font-size: 24px;
+  }
+}
+
 /* date section styling */
 .date-container {
   display: flex;
@@ -64,7 +98,7 @@ a {
 
 @media only screen and (max-width: 1000px) {
   .date-container {
-    padding: 80px 0px;
+    padding: 120px 0px;
   }
 
   .day {
@@ -78,7 +112,7 @@ a {
 
 @media only screen and (max-width: 600px) {
   .date-container {
-    padding: 40px 0px;
+    padding: 160px 0px;
   }
 
   .day {
@@ -87,52 +121,6 @@ a {
 
   .month {
     font-size: 60px;
-  }
-}
-
-/* venue section styling */
-.venue-container {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.venue-description {
-  display: flex;
-  width: 30vw;
-  padding: 40px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-shrink: 0;
-  align-self: stretch;
-  background: #ae482f;
-}
-
-.venue-img {
-  display: flex;
-  align-items: flex-start;
-  flex: 1 0 0;
-  align-self: stretch;
-  object-fit: cover;
-}
-
-@media only screen and (max-width: 1200px) {
-  .venue-container {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .venue-description {
-    width: 100%;
-    flex-direction: column;
-    gap: 80px;
-  }
-
-  .venue-img {
-    height: 600px;
   }
 }
 
@@ -167,11 +155,11 @@ a {
 
 @media only screen and (max-width: 1000px) {
   .list {
-    padding: 40px 20px;
+    padding: 20px 20px;
   }
 
   .list-text {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 
