@@ -4,12 +4,21 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: "Gloria Hallelujah", serif;
 }
 
-body {
-  font-family: "Fraunces", serif;
-  margin: 0;
-  background: #fff;
+@media (prefers-color-scheme: light) {
+  body {
+    color: saddlebrown;
+    background: linen;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: linen;
+    background: darkslategray;
+  }
 }
 
 a,
@@ -22,6 +31,7 @@ li {
 a:hover {
   transform: scale(1.01);
   transition: all 0.2s ease-in-out;
+  color: lightsalmon;
 }
 
 a {
@@ -31,29 +41,22 @@ a {
 /* date section styling */
 .date-container {
   display: flex;
-  padding: 140px 0px;
+  padding: 240px 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: stretch;
-  background: #fff;
 }
 
 .day {
-  color: #fd8600;
-  font-size: 662px;
-  font-style: normal;
-  font-weight: 700;
+  font-size: 400px;
   line-height: 90%;
   letter-spacing: -13.24px;
   margin: 0;
 }
 
 .month {
-  color: #76b8cc;
-  font-size: 174px;
-  font-style: normal;
-  font-weight: 400;
+  font-size: 80px;
   line-height: 90%;
   letter-spacing: -3.48px;
   margin: 0;
@@ -147,22 +150,19 @@ a {
 .list-item {
   display: flex;
   width: 100%;
-  padding: 40px 0px;
+  padding: 20px 0px;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  border-bottom: 1px solid #000;
-  /* color:#000 */
 }
 
 .list-text {
-  font-size: 88px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: -0.64px;
   margin: 0;
-  align-items: flex-start;
-  flex: 1 0 0;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -171,7 +171,7 @@ a {
   }
 
   .list-text {
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 
