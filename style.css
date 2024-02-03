@@ -197,8 +197,23 @@ a {
   margin-top: 20px;
 }
 
+.details-subtitle {
+  margin-top: 60px;
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 300;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
 @media only screen and (max-width: 800px) {
   .details-paragraph {
     font-size: 18px;
+  }
+
+  .details-subtitle {
+    font-size: 22px;
   }
 }
