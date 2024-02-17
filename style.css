@@ -79,6 +79,17 @@ a {
   line-height: 125%;
 }
 
+.intro-style {
+  display: flex;
+  padding: 0px 20px 200px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  background-color: #c3466c;
+}
+
 @media only screen and (max-width: 900px) {
   .hero-title {
     font-size: 50vw;
@@ -87,6 +98,9 @@ a {
 
   .hero-description {
     font-size: 24px;
+  }
+  .intro-style {
+    padding: 0px 20px 80px 20px;
   }
 }
 
@@ -123,12 +137,20 @@ a {
     font-size: 400px;
   }
 
+  .date-container {
+    padding: 80px 0px 40px 0px;
+  }
+
   .month {
     font-size: 110px;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  a.button {
+    font-size: 32px;
+  }
+
   .day {
     font-size: 240px;
   }
@@ -175,7 +197,7 @@ a {
   }
 
   .list-text {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
