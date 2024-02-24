@@ -79,6 +79,17 @@ a {
   line-height: 125%;
 }
 
+.hero-label {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+  width: 100%;
+  max-width: 600px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 125%;
+}
+
 .intro-style {
   display: flex;
   padding: 0px 20px 200px 20px;
@@ -99,6 +110,11 @@ a {
   .hero-description {
     font-size: 24px;
   }
+
+  .hero-label {
+    font-size: 24px;
+  }
+
   .intro-style {
     padding: 0px 20px 80px 20px;
   }
@@ -229,10 +245,10 @@ a {
 
 @media only screen and (max-width: 800px) {
   .details-paragraph {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .details-subtitle {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
